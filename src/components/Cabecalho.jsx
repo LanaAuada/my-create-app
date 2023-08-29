@@ -1,6 +1,5 @@
-import React from 'react'
 
-export default function cabecalho() {
+export default function Cabecalho() {
   return (
     <>
         <header>
