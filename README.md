@@ -15,3 +15,24 @@ Currently, two official plugins are available:
 - Criar a pasta routes.
 ## As rotas ou páginas
 - Criando as rotas/páginas [Home, EditarProdutos, Produtos, Erro404].
+## Importar os objetos das rotas no main.jsx.
+- import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+- import Home..., import Produtos..., import EditarProdutos..., import Erro404
+## Criando o objeto de rotas com o createBrowserRouter.
+- const router = createBrowserRouter([ ... ]);
+## Trocar o componente <App/> pelo componente <RouterProvider/> no ReactDOM.render.
+- ReactDOM.render(
+    <React.StrictMode>
+        <RouterProvider/>
+    </React.StrictMode>,
+);
+## Adicionando a props router ao componente RouterProvider
+- ReactDOM.render(
+    <React.StrictMode>
+        <RouterProvider router={router}/>
+    </React.StrictMode>,
+);
+## Vamos adicionar o componente Outlet em App.
+- return (
+    
+)
